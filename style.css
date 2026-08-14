@@ -5,7 +5,7 @@ body {
 
 #page {
   background-color: white;
-  padding: 88px;
+  padding: 88px 88px 0px 88px; 
 }
 
 img {
@@ -70,16 +70,24 @@ li {
   margin-bottom: 12px;
 }
 
+ol {
+    list-style-position: inside; /* Faz a numeração alinhar com o conteúdo */
+    padding-left: 0;             /* Remove recuos automáticos do navegador */
+}
+
+li h3 {
+    display: inline; /* Faz o título do H3 grudar ao lado do número "1." */
+}
+
 .bom-para {
   font-weight: bold;
   color: #333333;
   margin-top: 8px;
-  margin-bottom: 12px;
+  margin-bottom: 0px;
 }
 
 ul {
   list-style-type: disc;
-  margin-bottom: 48px;
 }
 
 .historia {
@@ -97,6 +105,8 @@ ul {
     "Helvetica Neue",
     sans-serif;
   font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 48px;
 }
 
 #casais {
@@ -114,6 +124,7 @@ ul {
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
+    margin: 0px;
 }
 
 #familias {
@@ -131,6 +142,8 @@ ul {
     sans-serif;
   font-weight: bold;
   color: #e5245e;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 #orçamento {
@@ -185,8 +198,6 @@ li::marker {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 16px;
-  margin: 0px;
-  padding: 8px;
 }
 
 #headline-history {
@@ -222,6 +233,11 @@ header {
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
+  p,
+  h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 #description {
@@ -232,7 +248,12 @@ header {
 
 hr {
   color: #d9d9d9;
-  margin: 40px;
+  margin-top: 40px;
+  margin-bottom: 64px;
+}
+
+#hr2{
+  margin: 40px
 }
 
 #description-end {
@@ -250,10 +271,13 @@ main div img {
 
 footer {
   color: #333333;
-  padding-bottom: 48px;
   text-align: center;
   margin: 0px;
-  padding: 65px;
+  padding-top: 65px;
+  padding-bottom: 48px;
+  font-family: "Alice", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 footer img {
@@ -261,4 +285,6 @@ footer img {
   width: 25px; /* largura*/
   height: auto; /* altura*/
   border-radius: 0;
+  margin: 2px;
+  
 }
